@@ -1,0 +1,196 @@
+body{
+  width: 100%;
+  margin: 0;
+  background-color: white;
+}
+
+a{
+  color: black;
+  text-decoration: none;
+  display: block;
+}
+a:hover{
+  color: #023db2;
+}
+a:visited{
+  color: black;
+}
+
+li{
+  /* border-bottom: 1px;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-style: solid;
+  border-color: black; */
+  margin: 2px auto;
+  border-radius: 10px;
+  width: 80%;
+}
+li:hover{
+  background-color: #0550e631;
+}
+
+#header{
+  display: flex;
+  width: 100%;
+  background-color: white;
+  margin-bottom: 0;
+  z-index: 1;
+  height: 130px;
+}
+
+#headercol1{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 3;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.menu{
+  background-color: red;
+  list-style: none;
+  color: black;
+  background-color: white;
+  text-align: right;
+  padding-right: 50px;
+  margin: 0 auto;
+  border-radius: 0px 0px 10px 10px;
+  z-index: 2;
+  position: fixed;
+  top: 130px;
+  left: 10%;
+  width: 80%;
+  height: 150px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: large;
+}
+
+.overlay{
+  background-color: rgba(0,0,0,0.4);
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+  position: fixed;
+}
+
+#loginbutt{
+  background-color: #023db2;
+  color: white;
+  width: 80%;
+  justify-content: center;
+  border: none;
+  border-radius: 10px;
+  font-size: large;
+  height: 30px;
+}
+.lglink{
+  color: white;
+}
+.lglink:hover{
+  color: white;
+}
+.lglink:visited{
+  color: white;
+}
+
+#logodiv{
+  flex: 1;
+  display: flex;
+  direction: rtl;
+  margin-right: 50px;
+  align-items: center;
+}
+
+.headbutt{
+  background: none;
+  border: none ;
+  cursor: pointer;
+}
+
+
+#footer{
+  width: 100%;
+  background-color: #002265;
+  direction: rtl;
+  padding: 50px;
+  text-align: right;
+  box-sizing: border-box;
+}
+
+#media{
+  list-style: none;
+  display: flex;
+  text-align: right;
+  padding: 0;
+}
+
+#access li::marker{
+  text-align: right;
+  padding: 0;
+  content: ">  ";
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+}
+#access{
+  padding: 0;
+  margin-top: 10px;
+  margin-right: 0 ;
+  text-align: right;
+  color: rgb(177, 177, 177);
+}
+#access li{
+  margin: 0;
+  width: fit-content;
+  margin-top:10px ;
+}
+#access li a:visited{
+  color: rgb(177, 177, 177);
+}
+#access li a:hover{
+  color: white;
+}
+
+#access li:hover{
+  background-color: #002265;
+}
+
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
