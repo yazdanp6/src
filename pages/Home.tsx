@@ -35,21 +35,21 @@ const Home = () => {
           <ul id='list'>
             <li>
               <div className='listitem'>
-                <img src={clock} width={110}/>
+                <img src={clock}/>
                 <h3>صرفه جویی در زمان</h3>
                 <b>در کمتر از 5 دقیقه قیمت دقیق دریافت کنید</b>
               </div>
             </li>
             <li>
               <div className='listitem'>
-                <img src={dollar} width={60}/>
+                <img src={dollar}/>
                 <h3>شفافیت قیمت</h3>
                 <b>بدون هزینه پنهان و با جزییات کامل</b>
               </div>
             </li>
             <li>
               <div className='listitem'>
-                <img src={safe} width={100}/>
+                <img src={safe}/>
                 <h3>پیمانکاران معتبر</h3>
                 <b>ارتباط با بهترین پیمانکاران دارای سابقه و تایید شده</b>
               </div>

@@ -127,6 +127,13 @@ li:hover{
   text-align: right;
   padding: 0;
 }
+#media li{
+  width: fit-content;
+  margin: 5px;
+}
+#media img{
+  width: 30px;
+}
 
 #access li::marker{
   text-align: right;
@@ -159,38 +166,28 @@ li:hover{
 }
 
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+
+/* موبایل */
+@media (max-width: 600px) {
+  #loginbutt{
+    font-size: medium;
   }
-  to {
-    transform: rotate(360deg);
+  .menu{
+    font-size: medium;
+    width: 90%;
+    left: 5%;
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+/* تبلت */
+@media (min-width: 601px) and (max-width: 1024px) {
+
 }
 
-.card {
-  padding: 2em;
-}
+/* دسکتاپ */
+@media (min-width: 1025px) {
 
-.read-the-docs {
-  color: #888;
 }

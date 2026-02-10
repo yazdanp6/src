@@ -8,6 +8,10 @@ import viteLogo from '/vite.svg';
 import listsvg from './pages/img/list_icon.svg';
 import { useEffect, useState } from "react";
 import home from './pages/img/home.svg';
+import insta from './pages/img/instagram.svg';
+import tel from './pages/img/telegram.svg';
+import whatsapp from './pages/img/whatsapp.svg';
+import phone from './pages/img/phone-call.svg';
 
 
 
@@ -80,16 +84,16 @@ function App() {
         <b>پلتفرم هوشمند تخمین هزینه ساخت و ساز و ارتباط با پیمانکاران معتبر</b>
         <ul id="media">
           <li>
-            <img/>
+            <img src={insta}/>
           </li>
           <li>
-            <img/>
+            <img src={tel}/>
           </li>
           <li>
-            <img/>
+            <img src={whatsapp}/>
           </li>
           <li>
-            <img/>
+            <img src={phone}/>
           </li>
         </ul>
         <b>دسترسی سریع</b>

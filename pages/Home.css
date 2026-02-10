@@ -84,6 +84,9 @@ html, body {
   margin: auto;
   padding: 0;
 }
+.listitem img{
+  width: 100px;
+}
 #list li:hover{
   background-color: white;
 }
@@ -103,7 +106,12 @@ html, body {
   height: 100%;
   margin-bottom: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #2CA9BC;
 }
+.listitem h3{
+  color: black;
+}
+
 .listitem:hover{
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(0,0,0,0.4);
@@ -182,4 +190,36 @@ html, body {
 }
 #butt22 a:visited{
   color: #023db2;
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  #list{
+    display: block;
+  }
+  .listitem{
+    padding-bottom: 40px;
+  }
+  h1{
+    font-size:22px;
+  }
+  h2{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 15px;
+  }
+  .listitem img{
+    width: 80px;
+  }
+}
+
+/* تبلت */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+}
+
+/* دسکتاپ */
+@media (min-width: 1025px) {
+
 }
