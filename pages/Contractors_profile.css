@@ -1,0 +1,146 @@
+#imgdiv{
+    width: 100%;
+    background-color: #2CA9BC;
+    color: black;
+    display: flex;
+    direction: rtl;
+    margin: auto;
+    position: relative;
+
+}
+#imgdiv::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    60deg,
+    #e9e9e9 0%,
+    #e9e9e9 70%,
+    transparent 45%
+  );
+  z-index: 0;
+}
+#imgdiv > *{
+     position: relative;
+     z-index: 1;
+}
+
+#imgdiv1{
+    flex: 1;
+    padding: 20px;
+}
+#imgdiv1 img{
+    width: 50%;
+    border-radius: 300px;
+}
+
+#imgdiv2{
+    flex: 1;
+    align-items: center;
+}
+#info{
+    height: 50%;
+    margin-top: 10%;
+}
+
+#mainpart{
+    width: 90%;
+    display: flex;
+    text-align: right;
+    direction: rtl;
+    margin: auto;
+    color: black;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+#sidebare{
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    position: sticky;
+    border: solid 1px;
+    border-color: #e9e9e9;
+    box-sizing: border-box;
+}
+#sidebare img{
+    width: 60px;
+    border-radius: 300px;
+    position: relative;
+    top: -35px;
+}
+#call{
+    width: 100%;
+    text-align: center;
+}
+#call button{
+    width: 80%;
+    background-color: #2CA9BC;
+    align-content: center;
+}
+
+#column2{
+    flex: 4;
+    margin-right: 20px;
+}
+.bios{
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: solid 1px;
+    border-color: #e9e9e9;
+    box-sizing:content-box;
+    margin-top: 10px;
+}
+
+/* موبایل */
+@media (max-width: 600px) {
+  #imgdiv{
+    display: none;
+  }
+  #mainpart{
+    display: block;
+  }
+
+  #column2{
+    margin: 0;
+  }
+  #sidebarehead{
+    background-color: #2CA9BC;
+    position: relative;
+  }
+  #sidebarehead::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        60deg,
+        #e9e9e9 0%,
+        #e9e9e9 60%,
+        transparent 45%
+    );
+    z-index: 0;
+  }
+  #sidebarehead > *{
+    z-index: 2;
+    position: relative;
+  }
+  
+  #sidebare img{
+    left: -30%;
+    width: 40%;
+  }
+}
+
+/* تبلت */
+@media (min-width: 601px) and (max-width: 1024px) {
+
+    #sidebare{
+        flex: 2;
+    }
+}
+
+/* دسکتاپ */
+@media (min-width: 1025px) {
+
+}

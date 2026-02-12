@@ -3,6 +3,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Estimate from "./pages/Estimate";
+import Contractors_profile from "./pages/Contractors_profile";
 import './App.css';
 import viteLogo from '/vite.svg';
 import listsvg from './pages/img/list_icon.svg';
@@ -39,11 +40,6 @@ function App() {
           <button className="headbutt" onClick={() => {navigate("/"),setOpen(false)}}>
             <img src={home} alt="list" width={24} height={24}/>
           </button>
-          {/* <nav>
-            <Link to="/">خانه</Link> |{" "}
-            <Link to="/about">درباره</Link>| {" "}
-            <Link to="/contact">تماس</Link>
-          </nav> */}
         </div>
         <div id="logodiv">
           <img src={viteLogo} width={50} height={50}/>
@@ -76,6 +72,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/Contractors" element={<Contractors_profile />} />
         <Route path="/estimate" element={<Estimate />}/>
       </Routes>
 
